@@ -1,0 +1,140 @@
+section {
+  height: 100vh;
+  background: url('C:/campusomega/src/assets/img/portada.PNG');
+  background-size: cover;
+}
+
+////////* NAV *///////
+
+nav {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 75px;
+  padding: 1em;
+}
+.navL{
+  height: 100%;
+}
+.navL img {
+  width: 500px;
+  height: 50px;
+}
+.navR {
+  height: 100%;
+  display: flex;
+}
+.navR ul {
+
+}
+.navR li, .navR a {
+  margin: .3em;
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+/////////* PORTADA *//////////
+
+.portada {
+  border: 1px solid black;
+  height: calc(100% - 75px);
+  display: flex;
+}
+.portadaI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  color:#EEF0F2;
+  padding: 1em;
+}
+.tPortada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portadaI h1 {
+  font-size: 54px;
+  font-weight: 700;
+  width: '';
+}
+.dPortada {
+  font-size: 18px;
+  font-weight: 400;
+}
+.bPortada {
+  margin-top: 2em;
+}
+.b1, .b2 {
+  font-size: 14px;
+  margin: 1em;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.b1 {
+
+}
+.b2 {
+  background-color: #10161A;
+  color: white
+}
+
+.portadaD {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formBox {
+  border: 2px solid white;
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.tForm {
+  color: white;
+  font-size: 1.5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+form input {
+  width: 90%;
+  height: 45px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+
+}
+
+
+
+
+
+
+
+
+/////* nav bootstrap *//////
+// .navbar {
+//   display: flex !important;
+//   justify-content: space-between !important;
+//   background-color: transparent !important;
+//   border: none;
+// }
+
