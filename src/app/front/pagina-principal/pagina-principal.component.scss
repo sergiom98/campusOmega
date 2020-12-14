@@ -124,6 +124,13 @@ form {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  input:focus {
+    opacity: 100;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgb(219, 205, 205);
+  }
 }
 form input {
   width: 100%;
@@ -139,7 +146,6 @@ form input::placeholder {
   font-size: .8em;
   opacity: none;
   font-weight: bold;
-  z-index: 8;
 }
 #sendForm {
   width: 130px;
@@ -157,7 +163,8 @@ form input::placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #EEE;
+  background-color: #FAFAFA;
 }
 .section2 img {
   height: 100%;
@@ -170,7 +177,8 @@ form input::placeholder {
   width: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #EEE;
+  background-color: #FAFAFA;
   h2 {
     text-align: center;
     margin-top: 1.5em;
@@ -229,7 +237,8 @@ form input::placeholder {
 .section4 {
   width: 100%;
   padding: 2em;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #EEE;
+  background-color: #FAFAFA;
 
   h2 {
     text-align: center;
@@ -280,7 +289,8 @@ form input::placeholder {
   align-items: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #EEE;
+  background-color: #FAFAFA;
   /*.ventajasCC {
     .developerImg {
 

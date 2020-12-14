@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaPrincipalComponent implements OnInit {
 
+  form = {
+    nombre:"",
+    email:"",
+    asunto:""
+  };
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  enviarFormulario() {
+    console.log(`Nombre ${this.form.nombre} Email ${this.form.email} Asunto ${this.form.asunto}`)
   }
 
 }
