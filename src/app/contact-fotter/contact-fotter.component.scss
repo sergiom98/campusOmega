@@ -1,0 +1,42 @@
+section {
+  h2{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .contactos {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    .contactosC {
+      text-align: center;
+      width: 100%;
+      padding: 1em;
+      .fas {
+        color: #6195FF;
+        font-size: 2.5em;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        font-size: .9em;
+        color: #868F9B;
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    input, textarea {
+      margin: 0.5em;
+    }
+  }
+}

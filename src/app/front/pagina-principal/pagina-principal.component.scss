@@ -1,7 +1,15 @@
 .section1 {
   height: 100vh;
-  background: url('C:/campusomega/src/assets/img/portada.PNG');
+  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/img/Web19203.png');
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // z-index: 1;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 ////////* NAV *///////
@@ -131,6 +139,7 @@ form input::placeholder {
   font-size: .8em;
   opacity: none;
   font-weight: bold;
+  z-index: 8;
 }
 #sendForm {
   width: 130px;
@@ -159,6 +168,8 @@ form input::placeholder {
 
 .section3 {
   width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
   border-bottom: 1px solid #707070;
   h2 {
     text-align: center;
@@ -217,6 +228,9 @@ form input::placeholder {
 
 .section4 {
   width: 100%;
+  padding: 2em;
+  border-bottom: 1px solid #707070;
+
   h2 {
     text-align: center;
     margin-top: 1.5em;
@@ -231,7 +245,6 @@ form input::placeholder {
   justify-content: center;
   padding-bottom: 55px;
   .cursoC {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,9 +255,54 @@ form input::placeholder {
     }
     .cursoD {
       padding: 20px;
+      font-size: .9em;
+      color: #868F9B;
+    }
+    h3 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 1em;
+    }
+    .cursoM {
+      color: #6195FF;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 }
+
+////////* SECTION 5 VENTAJAS */////////////
+
+.section5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #707070;
+  /*.ventajasCC {
+    .developerImg {
+
+    }
+  }*/
+  .ventajasC {
+    text-align: center;
+    width: 100%;
+    // border: 1px solid black;
+    .flat {
+      margin: 4em;
+      .flatImg {
+        width: 135px;
+      }
+      p {
+        margin: 1em;
+        color: #868F9B;
+      }
+    }
+  }
+}
+
 
 
 
