@@ -1,4 +1,5 @@
 ////////* NAV *///////
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 nav {
   font-weight: 500;
@@ -20,7 +21,9 @@ nav {
 .navR {
   height: 100%;
   display: flex;
-  font-size: 14px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.8;
+  line-height: 1.6;
 }
 // .navR ul {
 

@@ -52,6 +52,9 @@
 .portada {
   height: calc(100% - 75px);
   display: flex;
+  h1 {
+    line-height: 1;
+  }
 }
 .portadaI {
   display: flex;
@@ -183,8 +186,8 @@ form input::placeholder {
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: 700;
   }
 }
 .gradoL {
@@ -244,8 +247,8 @@ form input::placeholder {
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: 700;
   }
 }
 .section4C {
