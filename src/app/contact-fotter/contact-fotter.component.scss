@@ -125,3 +125,16 @@ footer {
     }
   }
 }
+
+
+///////////  RESPONSIVE ///////////////
+
+@media screen and (max-width: 440px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .contactos {
+    flex-direction: column;
+  }
+}
