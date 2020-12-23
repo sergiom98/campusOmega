@@ -13,14 +13,13 @@
   z-index: 1;
 }
 .portada {
-  background: url('C:/campusOmega/src/assets/img/Trazado 58.svg') no-repeat;
+  background: url('/assets/img/Trazado 58.svg') no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
   z-index: -9;
   position: relative;
   // margin-bottom: 100px;
-  //prueba
   #fondoR {
     position: absolute;
     width: 90%;
@@ -42,7 +41,6 @@
       padding-top: 75px;
       // border: 1px solid black;
       .cajaP {
-      // border: 1px solid black;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -110,7 +108,7 @@ h2 {
 
 
 .section2 {
-  background: url('C:/campusOmega/src/assets/img/Grupo 49(1).png') no-repeat;
+  background: url('/assets/img/Grupo 49(1).png') no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -133,13 +131,11 @@ h2 {
     // align-items: center;
     // justify-content: center;
     .onlineCtop {
-      // border: 1px solid black;
       width: 100%;
       height: 170px;
       display: flex;
       .onlineCtopI {
         width: 250px;
-        // border: 1px solid black;
         img {
           width: 250px;
           height: 250px;
@@ -154,7 +150,6 @@ h2 {
         align-items: center;
         width: 100%;
         padding-left: 1em;
-        // border: 1px solid black;
       }
     }
 
@@ -166,7 +161,7 @@ h2 {
     }
     .onlineCtext {
       // border: 1px solid black;
-      padding: 0px 20px;
+      padding: 25px 20px 0;
       color: #707070;
       .onlineClink {
         font-size: 1.2em;
@@ -361,40 +356,34 @@ h2 {
 
 
   .cajaCursosPresencial {
-    // display: flex;
-    // flex-direction: column;
     margin-top: 10em;
     margin-bottom: 10em;
     width: 80%;
     // height: 550px;
     background-color: #ECECEC;
+    // border: 1px solid black;
+    position: relative;
+    img {
+          height: 100%;
+          position: relative;
+          top: 0;
+          width: 145%;
+          left:  -40%;
+        }
     .cajaTop {
       display: flex;
-      // border: 1px solid black;
       width: 100%;
       height: 200px;
       .cajaTopIz {
-        // border: 1px solid black;
         height: 100%;
         width: 40%;
         position: relative;
-        img {
-          // position: absolute;
-          // top: -50%;
-          // left: -40%;
-          // width: 145%;
-          // height: 165%;
-          position: relative;
-          top: -80px;
-          left: -40px;
-          width: 125%;
-        }
+
       }
       .cajaTopDe {
         display: flex;
         justify-content: center;
         align-items: center;
-        // border: 1px solid black;
         height: 100%;
         width: 60%;
         h2 {
@@ -431,6 +420,11 @@ h2 {
 
 //// RESPONSIVE ////
 
+@media screen and (min-width: 1390px) {
+  #h2tit {
+    margin-top: 1em !important;
+  }
+}
 @media screen and (max-width: 930px) and (min-width: 622px) {
   .portadaC {
     height: fit-content !important;
@@ -438,7 +432,7 @@ h2 {
     // border: 1px solid black;
     .portI {
       width: 100% !important;
-      border: 1px solid black;
+      // border: 1px solid black;
       padding-top: 95px !important;
     }
     .portD {
@@ -467,7 +461,7 @@ h2 {
     padding: 0 !important;
     .onlineCtitl {
       padding-left: 55px !important;
-      border: 1px solid black;
+      // border: 1px solid black;
       // padding-left: 50px !important;
       h2 {
         margin: 0 !important;
@@ -480,14 +474,18 @@ h2 {
   * {
     padding: 0px;
     margin: 0px;
+    h2, h1 {
+      font-size: 2em !important;
+      font-weight: 700 !important;
+    }
   }
     .portadaC {
       height: fit-content !important;
       flex-direction: column;
-      border: 1px solid black;
+      // border: 1px solid black;
       .portI {
         width: 100% !important;
-        border: 1px solid black;
+        // border: 1px solid black;
         padding-top: 95px !important;
       }
       .portD {
@@ -507,9 +505,9 @@ h2 {
       }
     }
 
-
   #h2tit {
-    // margin-top: 4em;
+
+    margin-top: 2em;
     margin-bottom: 4em;
   }
 
@@ -525,11 +523,11 @@ h2 {
         width: 100% !important;
         height: 100% !important;
         img {
-          width: 100% !important;
-          height: 40% !important;
+          width: 80% !important;
+          height: 250px !important;
           position: relative !important;
           top: -50px !important;
-          left: 0 !important;
+          left: 30px !important;
         }
       }
       .onlineCtitl {
@@ -575,6 +573,11 @@ h2 {
     }
   }
 }
-
+@media screen and (max-width: 375px) {
+  table {
+    width: 100vw !important;
+    font-size: 0.8em !important;
+  }
+}
 
 
