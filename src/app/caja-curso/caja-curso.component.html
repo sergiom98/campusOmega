@@ -1,0 +1,19 @@
+<div class="cursoBox">
+  <div class="topBox">
+    <div class="cajaIm">
+      <img src="{{curso.imagen}}" alt="">
+    </div>
+    <div class="cajaT">{{curso.titulo}}<div class="cajaD">{{curso.descripcion}}</div></div>
+    <div class="cajaL" (click)="idCurso()">{{curso.link}}</div>
+  </div>
+  <div class="bottBox">
+    <div class="bottBoxI">
+      <div class="bottT">{{curso.tiempo}}h</div>
+      <div class="bottD">Tiempo</div>
+    </div>
+    <div class="bottBoxD">
+      <div class="bottT">{{curso.precio}}€</div>
+      <div class="bottD">Precio</div>
+    </div>
+  </div>
+</div>

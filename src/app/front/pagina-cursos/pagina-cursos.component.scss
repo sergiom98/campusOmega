@@ -202,14 +202,14 @@ h2 {
       font-size: 3em;
     }
     #wrapper {
-      border: 1px solid #707070;
+      // border: 1px solid #707070;
       height: 400px;
       width: 90%;
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       overflow-x: scroll;
-      overflow-y:hidden;
-      .cursoBox {
+      // overflow-y: hidden;
+       /* .cursoBox {
         border: 1px solid rgb(133, 130, 130);
         height: 350px;
         width: 225px;
@@ -276,6 +276,15 @@ h2 {
           }
         }
       }
+      */
+    }
+    #wrapper::-webkit-scrollbar {
+      // width: 0;
+      height: 10px;
+      background-color: #ddd;
+    }
+    #wrapper::-webkit-scrollbar-thumb {
+      background-color: #444;
     }
   }
 
@@ -294,7 +303,7 @@ h2 {
     }
   }
 
- /* .onlineC2 {
+ .onlineC2 {
     width: 80%;
     // height: 600px;
     background-color: #ECECEC;
@@ -352,7 +361,7 @@ h2 {
         }
       }
     }
-  }*/
+  }
 
 
   .cajaCursosPresencial {
@@ -452,9 +461,9 @@ h2 {
       }
     }
   }
-  #h2tit {
-    // margin-top: 4em;
-  }
+  // #h2tit {
+  //   // margin-top: 4em;
+  // }
 
   .onlineC {
     // border: 1px solid black;

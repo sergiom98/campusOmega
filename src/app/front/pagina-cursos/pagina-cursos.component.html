@@ -49,8 +49,10 @@
   <div class="cursosC">
     <i class="fas fa-angle-double-left"></i>
     <i class="fas fa-angle-double-right"></i>
+
       <div id="wrapper">
-      <div class="cursoBox">
+        <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso>
+      <!-- <div class="cursoBox">
         <div class="topBox">
           <div class="cajaIm">
             <img src="/assets/img/angular.png" alt="">
@@ -68,10 +70,8 @@
             <div class="bottD">Precio</div>
           </div>
         </div>
-      </div>
-      <div class="cursoBox"></div>
-      <div class="cursoBox"></div>
-      <div class="cursoBox"></div>
+      </div> -->
+
   </div>
   </div>
 

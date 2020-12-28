@@ -12,6 +12,7 @@ import { ContactFotterComponent } from './contact-fotter/contact-fotter.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CajaCursoComponent } from './caja-curso/caja-curso.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PaginaCursosComponent,
     PaginaGradosComponent,
     ContactFotterComponent,
-    NavbarComponent
+    NavbarComponent,
+    CajaCursoComponent
   ],
   imports: [
     BrowserModule,
