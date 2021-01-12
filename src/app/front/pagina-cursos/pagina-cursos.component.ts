@@ -13,6 +13,7 @@ export class PaginaCursosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   cursos= [
     {
       id:1,
