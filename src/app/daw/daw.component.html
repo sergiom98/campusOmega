@@ -1,6 +1,6 @@
 <section class="section1">
 
-  <!-- <app-navbar></app-navbar> -->
+  <app-navbar></app-navbar>
 
   <div class="portada">
     <div class="portadaI">
@@ -18,10 +18,10 @@
       <div class="formBox">
         <div class="tForm">Solicitar Información</div>
         <form action="">
-          <!-- <input type="text" placeholder="Nombre y Apellidos" name="nombre" [(ngModel)]="form.nombre">
+          <input type="text" placeholder="Nombre y Apellidos" name="nombre" [(ngModel)]="form.nombre">
           <input type="text" placeholder="Email" name="email" [(ngModel)]="form.email">
           <input type="text" placeholder="Asunto" name="asunto" [(ngModel)]="form.asunto">
-          <input type="submit" value="Enviar" id="sendForm" (click)="enviarFormulario()"> -->
+          <input type="submit" value="Enviar" id="sendForm" (click)="enviarFormulario()">
         </form>
       </div>
     </div>
@@ -117,7 +117,30 @@
     </div>
   </div>
 </div>
-<div class="section5D">e</div>
+<div class="section5D">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="/assets/img/carr5.jpg">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="/assets/img/carr6.jpg">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="/assets/img/carr7.jpg">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="/assets/img/carr8.jpg">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
 </section>
 
-<!-- <app-contact-fotter></app-contact-fotter> -->
+<app-contact-fotter></app-contact-fotter>

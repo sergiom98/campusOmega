@@ -13,8 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CajaCursoComponent } from './caja-curso/caja-curso.component';
-import { DawComponent } from './front/daw/daw.component';
-import { DamComponent } from './front/dam/dam.component';
+import { DawComponent } from './daw/daw.component';
+import { DamComponent } from './dam/dam.component';
 
 
 @NgModule({

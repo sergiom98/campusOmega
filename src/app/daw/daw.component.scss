@@ -252,7 +252,6 @@ form input::placeholder {
   padding: 120px 0;
   display: flex;
   width: 100%;
-  height: 600px;
   background-color: #FAFAFA;
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
@@ -267,10 +266,10 @@ form input::placeholder {
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 1px solid black;
     height: 100%;
     width: 100%;
     .p1 {
+      font-family: 'Varela Round', sans-serif;
       color: #868F9B;
       font-size: 16px;
       line-height: 1.6;
@@ -289,6 +288,7 @@ form input::placeholder {
           // border: 1px solid #6195FF;
         }
         p {
+          font-family: 'Varela Round', sans-serif;
           color: #868F9B;
           font-size: 16px;
           line-height: 1.6;
@@ -298,11 +298,18 @@ form input::placeholder {
 
   }
   .section5D {
-    padding: 0 0 0 10px;
+    padding: 20px;
     display: flex;
     justify-content: flex-start;
-    border: 1px solid black;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    ngb-carousel {
+      width: 100%;
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }

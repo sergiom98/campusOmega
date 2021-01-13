@@ -7,17 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DamComponent implements OnInit {
 
-  // images = [
-  //   '/assets/img/blog1.jpg',
-
-
-  // ]
+  form = {
+    nombre:"",
+    email:"",
+    asunto:""
+  };
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  enviarFormulario() {
+    console.log(`Nombre ${this.form.nombre} Email ${this.form.email} Asunto ${this.form.asunto}`)
+  }
 
 }

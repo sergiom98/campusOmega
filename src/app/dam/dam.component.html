@@ -1,6 +1,6 @@
 <section class="section1">
 
-  <!-- <app-navbar></app-navbar> -->
+  <app-navbar></app-navbar>
 
   <div class="portada">
     <div class="portadaI">
@@ -18,10 +18,10 @@
       <div class="formBox">
         <div class="tForm">Solicitar Información</div>
         <form action="">
-          <!-- <input type="text" placeholder="Nombre y Apellidos" name="nombre" [(ngModel)]="form.nombre">
+          <input type="text" placeholder="Nombre y Apellidos" name="nombre" [(ngModel)]="form.nombre">
           <input type="text" placeholder="Email" name="email" [(ngModel)]="form.email">
           <input type="text" placeholder="Asunto" name="asunto" [(ngModel)]="form.asunto">
-          <input type="submit" value="Enviar" id="sendForm" (click)="enviarFormulario()"> -->
+          <input type="submit" value="Enviar" id="sendForm" (click)="enviarFormulario()">
         </form>
       </div>
     </div>
@@ -250,35 +250,29 @@
   </div>
 </div>
 <div class="section8D">
- <ngb-carousel *ngIf="images">
+ <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <img src="/assets/img/carr1.jpg">
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Random second slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="/assets/img/carr2.jpg">
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="images[2]" alt="Random third slide">
+        <img src="/assets/img/carr3.jpg">
       </div>
-      <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="/assets/img/carr4.jpg">
       </div>
     </ng-template>
   </ngb-carousel>
 </div>
 </section>
 
+<app-contact-fotter></app-contact-fotter>
