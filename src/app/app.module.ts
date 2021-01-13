@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CajaCursoComponent } from './caja-curso/caja-curso.component';
 import { DawComponent } from './daw/daw.component';
 import { DamComponent } from './dam/dam.component';
+import { CursoDetalleComponent } from './curso-detalle/curso-detalle.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { DamComponent } from './dam/dam.component';
     NavbarComponent,
     CajaCursoComponent,
     DawComponent,
-    DamComponent
+    DamComponent,
+    CursoDetalleComponent
   ],
   imports: [
     BrowserModule,

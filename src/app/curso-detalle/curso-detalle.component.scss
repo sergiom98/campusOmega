@@ -1,0 +1,199 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: url('/assets/img/Grupo 51.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  header {
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    top: 0;
+    z-index: -10;
+  }
+  .section1 {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cajaCurso {
+      background-color: #EBEBEB;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #afacac;
+      .cajaCursoI {
+        position: relative;
+        width: 30%;
+        img {
+          width: 150%;
+          height: 100%;
+          position: absolute;
+          top: -90px;
+          left: -90px;
+        }
+      }
+      .cajaCursoD {
+        width: 70%;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          color: #434B53;
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .descripCurso {
+          color: #596D81;
+        }
+        .cajaCursoAbajo {
+          display: flex;
+          margin-top: 2em;
+          .cajaCursoAbajoI {
+            padding: 0 15px 0 0;
+            color: #000000;
+            font-weight: 500;
+            ul {
+              line-height: 1.8;
+            }
+            li {
+              list-style: none;
+            }
+          }
+          .cajaCursoAbajoD {
+            padding: 0 0 15px 15px;
+            border-left: 1px solid #707070;
+            .specs {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              margin-bottom: 5px;
+              i {
+                color: #D43939;
+                margin-right: 5px;
+              }
+              div {
+
+              }
+            }
+            .cajaCursoAbajoA {
+              width: 100%;
+              text-align: center;
+              .precio {
+                font-size: 30px;
+                font-weight: 700;
+                margin-top: 10px;
+              }
+              button {
+                background-color: #D43939;
+                font-weight: 700;
+                color: #FFF;
+                padding: 15px;
+                border-radius: 1em;
+                border: none;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .section2 {
+    padding: 70px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cajaDescripcion {
+      padding: 40px 70px;
+      background-color: #EBEBEB;
+      width: 80%;
+      border: 1px solid #afacac;
+      text-align: center;
+      h3 {
+        color: #434B53;
+        font-size: 33px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .section3 {
+    padding: 50px 70px;
+    width: 100%;
+    h3 {
+      color: #434B53;
+      font-size: 33px;
+      font-weight: 700;
+    }
+    .contenedorInfo {
+      margin-top: 4em;
+      display: flex;
+      .contenedorInfoI {
+        width: 100%;
+        // border: 1px solid black;
+        .contI {
+          // border: 1px solid black;
+          display: table;
+          .seO {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .se {
+              cursor: pointer;
+              color: #596D81;
+              border-bottom: 1px solid #707070;
+              font-size: 18px;
+              font-weight: 600;
+              padding: 10px 0 10px 30px;
+              i {
+                color: #000000;
+                margin-left: 5px;
+              }
+            }
+            .se:hover {
+              font-size: 19px;
+              color: rgba(160, 179, 197, 0.898);
+              i {
+                color: rgba(160, 179, 197, 0.898);
+                font-size: 19px;
+              }
+            }
+            .se:active {
+              border-bottom: 2px solid #707070;
+              font-size: 21px;
+              color: #0C7DEE;
+              i {
+                font-size: 21px;
+                color: #0C7DEE;
+              }
+            }
+          }
+
+        }
+
+      }
+      .contenedorInfoD {
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .cajaInfo {
+          padding: 40px 15%;
+          width: 80%;
+          border: 1px solid #afacac;
+          background-color: #EBEBEB;
+          color: #596D81;
+        }
+      }
+    }
+  }
+}

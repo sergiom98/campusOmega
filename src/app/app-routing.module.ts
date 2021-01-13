@@ -6,6 +6,7 @@ import { PaginaCursosComponent } from './front/pagina-cursos/pagina-cursos.compo
 import { ContactFotterComponent } from './contact-fotter/contact-fotter.component';
 import { DawComponent } from './daw/daw.component';
 import { DamComponent } from './dam/dam.component';
+import { CursoDetalleComponent } from './curso-detalle/curso-detalle.component';
 
 const routes: Routes = [
   {path: '', component: PaginaPrincipalComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'cursos', component: PaginaCursosComponent},
   {path: 'daw', component: DawComponent},
   {path: 'dam', component: DamComponent},
-  {path: 'contacto', component: ContactFotterComponent}
+  {path: 'contacto', component: ContactFotterComponent},
+  {path: 'curso', component: CursoDetalleComponent}
 ];
 
 @NgModule({
