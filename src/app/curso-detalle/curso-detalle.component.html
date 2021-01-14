@@ -97,4 +97,16 @@
       </div>
     </div>
   </section>
+
+  <section class="section4">
+    <h3>CURSOS RELACIONADOS</h3>
+    <div class="contenedorWrapp">
+      <div id="wrapper">
+        <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso>
+      </div>
+    </div>
+  </section>
+
+
 </body>
+ <app-contact-fotter></app-contact-fotter>

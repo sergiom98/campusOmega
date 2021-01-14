@@ -64,7 +64,7 @@ nav ul li{
 }
 nav ul li a{
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -85,6 +85,36 @@ a.active,a:hover{
 #check{
   display: none;
 }
+
+
+ol.s, a.a {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+ol.s {
+
+  // float: right;
+  // margin-right: 20px;
+  // line-height: 65px;
+  // margin: 0 5px;
+  li.z {
+    display:none;
+  }
+}
+ol.s:hover {
+    li.z {
+      position: fixed;
+      display: flex;
+      // flex-direction: column;
+      line-height: 30px;
+      margin: 0 5px;
+    }
+  }
+
 @media (max-width: 1155px){
   label.logo{
     font-size: 30px;

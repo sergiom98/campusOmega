@@ -82,6 +82,5 @@ export class PaginaCursosComponent implements OnInit {
 
   abrirCurso(id: number) {
     console.log(id);
-
   };
 }
