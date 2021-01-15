@@ -126,13 +126,19 @@ form input::placeholder {
 
 //////////// SECTION 2 LEARN TIPS ///////////////
 .section2 {
+  width: 100%;
   padding: 100px 70px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  display: table;
   h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
   }
   .learnCaja {
+    position: relative;
     margin-top: 4em;
     // border: 1px solid black;
     display: flex;
@@ -160,11 +166,13 @@ form input::placeholder {
       }
     }
     .LCd {
-      // border: 1px solid black;
-      width: 30%;
+      width: fit-content;
       img {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 387px;
+        height: 337px;
       }
     }
   }
@@ -186,6 +194,8 @@ form input::placeholder {
     }
   }
 }
+
+
 
 //////////// SECTION 3 TABLES ///////////////
 .section3 {
@@ -263,6 +273,7 @@ form input::placeholder {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
       border: 1px solid white;
       background-color: rgba(0, 0, 0, 0.5);
       i {
@@ -303,6 +314,8 @@ form input::placeholder {
     margin-top: 2em;
     .tips {
       display: flex;
+      align-items: center;
+      margin-bottom: 5px;
       i {
         margin-right: 10px;
         color: #6195FF;
@@ -312,9 +325,11 @@ form input::placeholder {
         // border: 1px solid #6195FF;
       }
       p {
+        text-align: left;
         font-size: 16px;
         color: #868F9B;
         line-height: 1.6;
+        margin: 0;
       }
     }
   }
@@ -332,36 +347,42 @@ form input::placeholder {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 50px;
-  .cajaTip {
+  .contenedorTip {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
-    height: 50%;
-    width: 25%;
-    margin: 1em;
-    background-color: rgba(0,0,0,0.2);
-    i {
-      font-size: 36px;
-      color: #6195FF;
-      margin-bottom: 20px;
-    }
-    h3 {
-      font-size: 21px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #10161A;
-    }
+    .cajaTip {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid white;
+      height: 50%;
+      width: 25%;
+      margin: 1em;
+      background-color: rgba(0,0,0,0.2);
+      i {
+        font-size: 36px;
+        color: #6195FF;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #10161A;
+      }
   }
   .cajaTip:hover {
     background-color: #1C1D21;
     transition: 1s width;
 
   }
+  }
+
 }
 
 .section7 {
@@ -376,18 +397,19 @@ form input::placeholder {
   .contenedor4 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     width: 100%;
     height: 100%;
     margin-top: 2em;
-    padding: 20px 70px 50px;
+    padding: 20px 70px 0;
     .cajaTap {
       display: flex;
       flex-direction: column;
+      // justify-content: center ;
       padding: 50px 30px;
       border: 1px solid #EEE;
-      height: 250px;
-      max-height: 100%;
+      height: auto;
+      // max-height: auto;
       width: 33%;
       margin: 1em;
       h3 {
@@ -406,9 +428,11 @@ form input::placeholder {
 
 }
 
+//////// SALIDAS PROFESIONALES CARRUSEL ////////
 .section8 {
   padding: 120px 0;
   display: flex;
+  align-items: center;
   width: 100%;
   background-color: #FAFAFA;
   border-top: 1px solid #EEE;
@@ -436,7 +460,9 @@ form input::placeholder {
       width: 90%;
       margin-top: 2em;
       .tips {
+        margin-bottom: 5px;
         display: flex;
+        align-items: center;
         i {
           margin-right: 10px;
           color: #6195FF;
@@ -446,10 +472,12 @@ form input::placeholder {
           // border: 1px solid #6195FF;
         }
         p {
+          text-align: left;
           font-family: 'Varela Round', sans-serif;
           color: #868F9B;
           font-size: 16px;
           line-height: 1.6;
+          margin: 0;
         }
       }
     }
@@ -471,3 +499,156 @@ form input::placeholder {
     }
   }
 }
+
+
+@media screen and (max-width: 1250px) {
+  .section2 {
+    .learnCaja {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      .LCi {
+        width: 100% !important;
+      }
+      .LCd {
+        text-align: center;
+        width: 100% !important;
+        img {
+          position: relative !important;
+          bottom: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section2 {
+
+
+    .contenedor2 {
+      border: 1px solid black;
+      width: 100%;
+      // display: flex !important;
+      // flex-direction: column !important;
+      // align-items: center !important;
+      // justify-content: center;
+       .learnCarr {
+        // border: 1px solid black;
+        display: table !important;
+        .imgCarr {
+          text-align: center;
+          height: auto !important;
+          img {
+            width: 90% !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section7 {
+    .contenedor4 {
+      padding: 20px !important;
+      flex-direction: column;
+      .cajaTap {
+        width: 100%;
+        margin: 0 0 1em 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section8 {
+    flex-direction: column;
+    .section8D {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      ngb-carousel {
+        width: 80%;
+        height: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section6 {
+    display: table;
+    height: auto;
+    .contenedorTip {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cajaTip {
+        width: 90%;
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .tableContainer {
+  padding: 0 10px !important;
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 620px) {
+  .section2 {
+    padding: 100px 0;
+  }
+
+}
+@media screen and (max-width: 560px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .section4 {
+    padding: 20px 0;
+    text-align: center;
+    display: table;
+    .cajaP1 {
+      flex-direction: column;
+    }
+  }
+
+  .section8 {
+    .section8D {
+      ngb-carousel {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .section2 {
+    .learnCaja {
+      .LCd {
+        img {
+          width: 100%;
+          height: 100%;
+          right: 5px;
+        }
+      }
+    }
+  }
+}
+
+
