@@ -6,13 +6,13 @@
   >
     <div class="cajaCurso">
       <div class="cajaCursoI">
-        <div class="cajaCursoIA"><img src="/assets/img/NoPath.png" alt=""></div>
+        <div class="cajaCursoIA"><img src="{{curso.imagen2}}" alt=""></div>
         <div class="cajaCursoIB"></div>
       </div>
 
       <div class="cajaCursoD">
-        <h2>ANGULAR 10 CURSO COMPLETO</h2>
-        <div class="descripCurso">Aprende a desarrollar aplicaciones web con Angular 10 de forma práctica y desde 0</div>
+        <h2>{{curso.titulo2}}</h2>
+        <div class="descripCurso">{{curso.descripcion2}}Aprende a desarrollar aplicaciones web con Angular 10 de forma práctica y desde 0</div>
         <div class="cajaCursoAbajo">
           <div class="cajaCursoAbajoI">
             <ul>
@@ -38,10 +38,10 @@
             </div>
             <div class="specs">
               <i class="fas fa-clock"></i>
-              <div>50h de contenido</div>
+              <div>{{curso.tiempo}}h de contenido</div>
             </div>
             <div class="cajaCursoAbajoA">
-              <div class="precio">59,69€</div>
+              <div class="precio">{{curso.precio}}€</div>
               <button>COMPRAR CURSO</button>
             </div>
           </div>
@@ -103,7 +103,9 @@
     <h3>CURSOS RELACIONADOS</h3>
     <div class="contenedorWrapp">
       <div id="wrapper">
-        <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso>
+
+        <app-caja-curso *ngFor="let datosCurso of cursoo" [valor]="datosCurso"></app-caja-curso>
+        <!-- *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)" -->
       </div>
     </div>
   </section>

@@ -51,7 +51,9 @@
     <i class="fas fa-angle-double-right"></i>
 
       <div id="wrapper">
-        <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso>
+        <app-caja-curso *ngFor="let datosCurso of cursoo" [valor]="datosCurso"></app-caja-curso>
+        <!-- <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso> -->
+
       <!-- <div class="cursoBox">
         <div class="topBox">
           <div class="cajaIm">

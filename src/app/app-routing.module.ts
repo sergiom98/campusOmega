@@ -10,12 +10,11 @@ import { CursoDetalleComponent } from './curso-detalle/curso-detalle.component';
 
 const routes: Routes = [
   {path: '', component: PaginaPrincipalComponent},
-  // {path: 'inicio', component: PaginaPrincipalComponent},
   {path: 'cursos', component: PaginaCursosComponent},
   {path: 'daw', component: DawComponent},
   {path: 'dam', component: DamComponent},
-  {path: 'contacto', component: ContactFotterComponent},
-  {path: 'curso', component: CursoDetalleComponent}
+  {path:'cursos/:id',component:CursoDetalleComponent},
+  { path: 'cursos/:id/:id',   redirectTo: '/cursos/:id', pathMatch: 'full' },
 ];
 
 @NgModule({
