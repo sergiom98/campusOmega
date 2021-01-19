@@ -1,3 +1,4 @@
+<div class="wholePage">
 <body>
   <app-navbar></app-navbar>
   <header></header>
@@ -5,14 +6,13 @@
   <section class="section1"
   >
     <div class="cajaCurso">
-      <div class="cajaCursoI">
-        <div class="cajaCursoIA"><img src="{{curso.imagen2}}" alt=""></div>
-        <div class="cajaCursoIB"></div>
+      <div class="cajaCursoI"><img src="{{curso?.imagen2}}">
+
       </div>
 
       <div class="cajaCursoD">
-        <h2>{{curso.titulo2}}</h2>
-        <div class="descripCurso">{{curso.descripcion2}}Aprende a desarrollar aplicaciones web con Angular 10 de forma práctica y desde 0</div>
+        <h2>{{curso?.titulo2}}</h2>
+        <div class="descripCurso">{{curso?.descripcion2}}</div>
         <div class="cajaCursoAbajo">
           <div class="cajaCursoAbajoI">
             <ul>
@@ -53,11 +53,7 @@
   <section class="section2">
     <div class="cajaDescripcion">
       <h3>DESCRIPCIÓN DEL CURSO</h3>
-      <div class="desc">Aprende Angular 10 desde cero. Con este curso de Angular 10 podrás desarrollar aplicaciones
-        web modernas de forma práctica y sin tener conocimientos previos en Angular. Aprenderás a
-        crear aplicaciones en la última versión del framework más popular de JavaScript, respaldada
-        por Google. De esta forma podrás mejorar la experiencia de usuario mediante aplicaciones
-        SPA.</div>
+      <div class="desc">{{curso.descripcionGeneral}}</div>
     </div>
   </section>
 
@@ -113,3 +109,4 @@
 
 </body>
  <app-contact-fotter></app-contact-fotter>
+</div>

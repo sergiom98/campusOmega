@@ -9,6 +9,7 @@ import { TiendaService } from '../../tienda.service';
 export class PaginaCursosComponent implements OnInit {
   cursoo : Curso[] | undefined;
 
+
   constructor(private tiendaService: TiendaService) {
 
   }

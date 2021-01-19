@@ -1,6 +1,9 @@
-body {
-  padding: 0px;
-  margin: 0px;
+.wholePage {
+  margin: 0 auto;
+  max-width: 1500px;
+  body {
+  margin: 0;
+  padding: 0;
   background: url('/assets/img/Grupo 51.png') no-repeat;
   background-size: cover;
   width: 100%;
@@ -32,13 +35,16 @@ body {
       .cajaCursoI {
         position: relative;
         width: 30%;
-        img {
-          width: 150%;
-          // height: 110%;
-          position: absolute;
-          top: -90px;
-          left: -90px;
+          img {
+            width: 130%;
+            // height: 110%;
+            position: absolute;
+            top: -90px;
+            left: -80px;
+            text-shadow: 50px #FF0000;
+          }
         }
+
         // .cajaCursoIA {
         //   position: relative;
         //   border: 1px solid black;
@@ -51,8 +57,6 @@ body {
         //   width: 100%;
         //   height: 50%;
         // }
-
-      }
       .cajaCursoD {
         width: 70%;
         padding: 60px 20px;
@@ -367,6 +371,7 @@ body {
     }
 
 
+  }
   }
 }
 
