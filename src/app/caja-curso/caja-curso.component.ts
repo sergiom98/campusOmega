@@ -8,23 +8,10 @@ import { Curso } from '../curso';
   styleUrls: ['./caja-curso.component.scss']
 })
 export class CajaCursoComponent implements OnInit {
-  /*valor={
-    id: 0,
-    imagen: "string",
-    imagen2: "string",
-    titulo:" string",
-    titulo2: "string",
-    descripcion: "string",
-    descripcion2: "string",
-    descripcionGeneral: "strin",
-    link: "string",
-    precio:0,
-    tiempo:0
-  }*/
-  @Input() valor: Curso;
+
+  @Input() valor: Curso | undefined;
+
   constructor() {
-
-
   }
 
 

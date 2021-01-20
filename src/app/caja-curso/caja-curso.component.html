@@ -1,18 +1,18 @@
-<div class="cursoBox" routerLink="./{{valor.id}}">
+<div class="cursoBox" routerLink="./{{valor?.id}}">
   <div class="topBox">
     <div class="cajaIm">
-      <img src="{{valor.imagen}}" alt="">
+      <img src="{{valor?.imagen}}" alt="">
     </div>
-    <div class="cajaT">{{valor.titulo}}<div class="cajaD">{{valor.descripcion}}</div></div>
-    <div class="cajaL">{{valor.link}}</div>
+    <div class="cajaT">{{valor?.titulo}}<div class="cajaD">{{valor?.descripcion}}</div></div>
+    <div class="cajaL">{{valor?.link}}</div>
   </div>
   <div class="bottBox">
     <div class="bottBoxI">
-      <div class="bottT">{{valor.tiempo}}h</div>
+      <div class="bottT">{{valor?.tiempo}}h</div>
       <div class="bottD">Tiempo</div>
     </div>
     <div class="bottBoxD">
-      <div class="bottT">{{valor.precio}}€</div>
+      <div class="bottT">{{valor?.precio}}€</div>
       <div class="bottD">Precio</div>
     </div>
   </div>

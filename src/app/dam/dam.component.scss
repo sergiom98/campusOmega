@@ -139,6 +139,7 @@ form input::placeholder {
   }
   .learnCaja {
     position: relative;
+    margin: 0 auto;
     margin-top: 4em;
     // border: 1px solid black;
     display: flex;
@@ -178,6 +179,7 @@ form input::placeholder {
   }
 
   .learnCarr {
+    margin: 0 auto;
     margin-top: 2em;
     display: flex;
     // border: 1px solid black;
@@ -525,10 +527,7 @@ form input::placeholder {
 
 @media screen and (max-width: 1000px) {
   .section2 {
-
-
     .contenedor2 {
-      border: 1px solid black;
       width: 100%;
       // display: flex !important;
       // flex-direction: column !important;
@@ -537,6 +536,7 @@ form input::placeholder {
        .learnCarr {
         // border: 1px solid black;
         display: table !important;
+
         .imgCarr {
           text-align: center;
           height: auto !important;
@@ -551,6 +551,15 @@ form input::placeholder {
 }
 
 @media screen and (max-width: 900px) {
+  .portada {
+    flex-direction: column;
+    .portadaI {
+      width: 100%;
+    }
+    .portadaD {
+      width: 100%;
+    }
+  }
   .section7 {
     .contenedor4 {
       padding: 20px !important;
@@ -647,6 +656,30 @@ form input::placeholder {
           right: 5px;
         }
       }
+    }
+  }
+  .section7 {
+    padding: 60px 5px !important;
+  }
+  .section8 {
+    h2 {
+      text-align: center;
+    }
+    .section8I {
+      padding: 0 5px !important;
+    }
+  }
+}
+@media screen and (max-width: 315px) {
+  .section7 {
+    padding: 60px 5px !important;
+    .cajaTap {
+      padding: 30px 10px !important;
+    }
+  }
+  .section8 {
+    h2 {
+      font-size: 2em;
     }
   }
 }
