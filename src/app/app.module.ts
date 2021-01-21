@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './front/pagina-principal/pagina-principal.component';
 import { PaginaCursosComponent } from './front/pagina-cursos/pagina-cursos.component';
-import { PaginaGradosComponent } from './front/pagina-grados/pagina-grados.component';
 import { ContactFotterComponent } from './contact-fotter/contact-fotter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -23,7 +22,6 @@ import { CursoDetalleComponent } from './curso-detalle/curso-detalle.component';
     AppComponent,
     PaginaPrincipalComponent,
     PaginaCursosComponent,
-    PaginaGradosComponent,
     ContactFotterComponent,
     NavbarComponent,
     CajaCursoComponent,
