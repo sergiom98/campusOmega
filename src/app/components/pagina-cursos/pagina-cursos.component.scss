@@ -74,7 +74,7 @@
           font-weight: bold;
         }
       }
-      }
+    }
   }
     .portD {
       // border: 1px solid black;
@@ -94,7 +94,7 @@
 }
 
 
-#h2tit {
+.h2tit {
   margin-bottom: 3em;
 }
 h2 {
@@ -288,7 +288,7 @@ h2 {
     }
   }
 
-  #cursosP {
+  .cursosP {
     margin-top: 3em;
     margin-bottom: 2em;
   }
@@ -430,7 +430,7 @@ h2 {
 //// RESPONSIVE ////
 
 @media screen and (min-width: 1390px) {
-  #h2tit {
+  .h2tit {
     margin-top: 1em !important;
   }
 }
@@ -461,7 +461,7 @@ h2 {
       }
     }
   }
-  // #h2tit {
+  // .h2tit {
   //   // margin-top: 4em;
   // }
 
@@ -514,7 +514,7 @@ h2 {
       }
     }
 
-  #h2tit {
+  .h2tit {
 
     margin-top: 2em;
     margin-bottom: 4em;

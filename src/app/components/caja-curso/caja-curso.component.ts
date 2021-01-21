@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
-import { Curso } from '../curso';
+import { Curso } from '../../curso';
 
 
 @Component({

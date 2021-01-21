@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Curso } from '../../curso';
-import { TiendaService } from '../../tienda.service';
+import { TiendaService } from '../../services/tienda.service';
 @Component({
   selector: 'app-pagina-cursos',
   templateUrl: './pagina-cursos.component.html',

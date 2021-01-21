@@ -75,7 +75,9 @@ ol.s {
   */
   }
 }
-
+li.w {
+    cursor: pointer !important;
+  }
 ol.s:hover {
   transition: all .5s;
   div.h {
@@ -101,6 +103,7 @@ ol.s:hover {
     }
   }
 
+
   }
 
 @media (max-width: 1155px){
@@ -110,6 +113,9 @@ ol.s:hover {
   }
   nav ul ol li a{
     font-size: 16px;
+  }
+  li.w {
+    cursor: pointer;
   }
 }
 @media (max-width: 1085px){
@@ -184,7 +190,7 @@ ol.s:hover {
     }
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 438px) {
   nav {
     .logo {
       height: 100%;
@@ -194,8 +200,9 @@ ol.s:hover {
       padding: 0 !important;
     }
     img {
-      width: 90%;
-      height: 90%;
+      padding: 15px 5px;
+      width: 100%;
+      height: 100%;
     }
   }
 }

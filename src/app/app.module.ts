@@ -5,16 +5,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginaPrincipalComponent } from './front/pagina-principal/pagina-principal.component';
-import { PaginaCursosComponent } from './front/pagina-cursos/pagina-cursos.component';
-import { ContactFotterComponent } from './contact-fotter/contact-fotter.component';
+import { PaginaPrincipalComponent } from './components/pagina-principal/pagina-principal.component';
+import { PaginaCursosComponent } from './components/pagina-cursos/pagina-cursos.component';
+import { ContactFotterComponent } from './components/shared/contact-fotter/contact-fotter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CajaCursoComponent } from './caja-curso/caja-curso.component';
-import { DawComponent } from './daw/daw.component';
-import { DamComponent } from './dam/dam.component';
-import { CursoDetalleComponent } from './curso-detalle/curso-detalle.component';
+import { CajaCursoComponent } from './components/caja-curso/caja-curso.component';
+import { DawComponent } from './components/daw/daw.component';
+import { DamComponent } from './components/dam/dam.component';
+import { CursoDetalleComponent } from './components/curso-detalle/curso-detalle.component';
 
 
 @NgModule({
