@@ -42,7 +42,7 @@
             </div>
             <div class="cajaCursoAbajoA">
               <div class="precio">{{curso?.precio}}€</div>
-              <button>COMPRAR CURSO</button>
+              <button [routerLink]="['/cart', { id:curso?.id }]">COMPRAR CURSO</button>
             </div>
           </div>
         </div>

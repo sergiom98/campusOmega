@@ -15,6 +15,7 @@ import { CajaCursoComponent } from './components/caja-curso/caja-curso.component
 import { DawComponent } from './components/daw/daw.component';
 import { DamComponent } from './components/dam/dam.component';
 import { CursoDetalleComponent } from './components/curso-detalle/curso-detalle.component';
+import { CarritoComponent } from './components/shared/carrito/carrito.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CursoDetalleComponent } from './components/curso-detalle/curso-detalle.
     CajaCursoComponent,
     DawComponent,
     DamComponent,
-    CursoDetalleComponent
+    CursoDetalleComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,

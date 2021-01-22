@@ -7,6 +7,7 @@ import { ContactFotterComponent } from './components/shared/contact-fotter/conta
 import { DawComponent } from './components/daw/daw.component';
 import { DamComponent } from './components/dam/dam.component';
 import { CursoDetalleComponent } from './components/curso-detalle/curso-detalle.component';
+import { CarritoComponent } from './components/shared/carrito/carrito.component';
 
 const routes: Routes = [
   {path: '', component: PaginaPrincipalComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'daw', component: DawComponent},
   {path: 'dam', component: DamComponent},
   {path: 'cursos/:id',component:CursoDetalleComponent},
-  {path: 'cursos/:id/:id',   redirectTo: '/cursos/:id', pathMatch: 'full'}
+  {path: 'cursos/:id/:id',   redirectTo: '/cursos/:id', pathMatch: 'full'},
+  {path: 'cart', component: CarritoComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

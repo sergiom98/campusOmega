@@ -178,8 +178,6 @@ form input::placeholder {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 50px;
   .contenedorTip {
     width: 100%;
@@ -212,9 +210,12 @@ form input::placeholder {
   .cajaTip:hover {
     background-color: #1C1D21;
     transition: 1s width;
+    h3 {
+      color: white;
+    }
+  }
+  }
 
-  }
-  }
 }
 
 .section4 {
