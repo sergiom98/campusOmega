@@ -7,20 +7,81 @@ import { TiendaService } from '../../services/tienda.service';
   styleUrls: ['./pagina-cursos.component.scss']
 })
 export class PaginaCursosComponent implements OnInit {
-  cursoo : Curso[] | undefined;
+  mostrarmodal = false;
+  PrecioTotal!: number;
+  FacturaTotal!: number;
+  TotalIva!: number;
+  cesta: Curso[] = [];
+  cursoo: Curso[] = [];
 
 
   constructor(private tiendaService: TiendaService) {
-
+    if(localStorage.getItem('cesta')){
+      this.recuperarCurso();
+    }
   }
-
-  ngOnInit(): void {
+  // constructor(private tiendaService: TiendaService, PrecioTotal: number, FacturaTotal: number, TotalIva: number) {
+  //   this.FacturaTotal = FacturaTotal;
+  //   this.PrecioTotal = PrecioTotal;
+  //   this.TotalIva = TotalIva;
+  //   if(localStorage.getItem('cesta')){
+  //     this.recuperarCurso();
+  //   }
+  // }
+  ngOnInit(): void{
     this.cursoo=this.tiendaService.getAllCursos();
   }
 
 
 
-  /* ANTIGUO
+  recuperarCurso(){
+    this.cesta= JSON.parse(localStorage.getItem('cesta')!);
+  }
+
+  recibir(objeto:Curso){
+    this.cesta.push(objeto);
+    localStorage.setItem("cesta", JSON.stringify(this.cesta));
+  }
+  abrirModal(){
+    this.mostrarmodal=true;
+    this.PrecioTotal=this.precioTotal();
+    this.TotalIva=this.iva();
+    this.FacturaTotal=this.factura();
+  }
+
+  precioTotal(){
+    let total=0;
+    for(let i=0;i<this.cesta.length;i++){
+      total += this.cesta[i].precio;
+    }
+    return total;
+  }
+
+  borrarCurso(index: number){
+    this.cesta.splice(index, 1);
+    this.PrecioTotal=this.precioTotal();
+    this.TotalIva=this.iva();
+    this.FacturaTotal=this.factura();
+    localStorage.setItem("cesta", JSON.stringify(this.cesta));
+  }
+
+  iva(){
+    let facturaIva=0;
+    facturaIva=this.precioTotal()*0.21;
+    return facturaIva;
+  }
+
+  factura(){
+    let factura=0;
+    factura = this.precioTotal()+this.iva();
+    return factura;
+  }
+
+}
+
+
+
+ /* ANTIGUO
   cursos= [
     {
       id:1,
@@ -91,4 +152,3 @@ export class PaginaCursosComponent implements OnInit {
     console.log(id);
   };
   */
-}

@@ -1,6 +1,35 @@
 
 <div class="bar1"><app-navbar></app-navbar></div>
 <div class="bar"></div>
+
+<div [ngClass]="{modalno: !mostrarmodal, modalsi : mostrarmodal}" id="modal" >
+
+  <div class="cajaFactura">
+    <div class="cerrar" (click)="mostrarmodal=false"><i class="fas fa-times-circle"></i></div>
+    <div class="cuadrar">
+    <div class="centrarFactura" *ngFor="let datosCesta of cesta; index as i">
+
+      <div class="detalleFactura">
+        <div class="imagenP"><img [src]="datosCesta.imagen2" alt=""></div>
+         <span class="nombre">{{datosCesta.titulo}}</span>
+         <span class="precio">{{datosCesta.precio}}</span>
+         <div class="icono"><i class="fas fa-times" (click)="borrarCurso(i)"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="cajonaso">
+    <div class="mostrarPrecio ordenar" ><p>Total Precio:</p> <p> {{PrecioTotal | number : '2.2'}} €</p></div>
+    <div class="iva ordenar"><p> Iva 21%:</p><p>{{TotalIva | number : '2.2'}} €</p></div>
+    <div class="total ordenar"><p>Factura Total:</p> <p> {{FacturaTotal | number : '2.2'}} €</p> </div>
+  </div>
+  </div>
+</div>
+
+<div class="compra">
+  <a class="carro" (click)="abrirModal()"><i class="fas fa-shopping-cart"></i></a>
+  <span class="cesta" *ngIf="cesta.length>0">{{cesta.length}}</span>
+</div>
+
 <section class="portada">
   <img id="fondoR" src="/assets/img/Trazado 49.png" alt="">
   <div class="portadaC">
@@ -51,7 +80,7 @@
     <i class="fas fa-angle-double-right"></i>
 
       <div id="wrapper">
-        <app-caja-curso *ngFor="let datosCurso of cursoo" [valor]="datosCurso"></app-caja-curso>
+        <app-caja-curso *ngFor="let datosCurso of cursoo" [valor]="datosCurso" (comprarCurso)="recibir($event)"></app-caja-curso>
         <!-- <app-caja-curso *ngFor="let item of cursos" [curso]="item" (datos)="abrirCurso($event)"></app-caja-curso> -->
 
       <!-- <div class="cursoBox">

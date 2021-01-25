@@ -1,10 +1,12 @@
-<div class="cursoBox" routerLink="./{{valor?.id}}" onclick="window.scrollTo(0, 0)">
+<div class="cursoBox">
+  <!-- routerLink="./{{valor?.id}}"  onclick="window.scrollTo(0, 0)"-->
   <div class="topBox">
     <div class="cajaIm">
       <img src="{{valor?.imagen}}" alt="">
     </div>
     <div class="cajaT">{{valor?.titulo}}<div class="cajaD">{{valor?.descripcion}}</div></div>
-    <div class="cajaL">{{valor?.link}}</div>
+    <div class="cajaL" (click)="comprar()"></div>
+    <div class="cajaL" routerLink="./{{valor?.id}}" onclick="window.scrollTo(0, 0)">VER CURSO</div>
   </div>
   <div class="bottBox">
     <div class="bottBoxI">

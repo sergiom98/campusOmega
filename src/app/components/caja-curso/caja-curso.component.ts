@@ -10,6 +10,7 @@ import { Curso } from '../../curso';
 export class CajaCursoComponent implements OnInit {
 
   @Input() valor: Curso | undefined;
+  @Output() comprarCurso: EventEmitter<any>=new EventEmitter();
 
   constructor() {
   }
@@ -22,6 +23,10 @@ export class CajaCursoComponent implements OnInit {
   */
 
   ngOnInit(): void {
+  }
+
+  comprar(){
+    this.comprarCurso.emit(this.valor);
   }
 
   /* viejo ts
