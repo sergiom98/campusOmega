@@ -1,5 +1,4 @@
 .cursoBox {
-  cursor: pointer;
   border: 1px solid rgb(133, 130, 130);
   height: 350px;
   width: 225px;
@@ -12,6 +11,10 @@
   padding: 10px 20px 10px;
   background-color: #fff;
   .topBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .cajaIm {
       width: 100%;
       height: 150px;
@@ -22,20 +25,62 @@
     }
     .cajaT {
       font-weight: 700;
-      margin-top: 10px;
+      // margin-top: 10px;
       line-height: 1;
       .cajaD {
         color: #ababae;
         font-size: 13px;
       }
     }
+    .addCart {
+      border-radius: 0.5em;
+      // height: 25px;
+      width: fit-content;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid #C4DFFF;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      background-color: #248EFB;
+      padding: 3px 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      transition: all 0.2s;
+      hr {
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 100%);
+        height: 15px;
+        width: 1px;
+        color: white;
+        margin: 0 .5em 0 .5em;
+      }
+      img {
+        width: 18px;
+      }
+    }
+    .addCart:hover {
+      background-color: #389afd;
+    }
+    .addCart:active {
+      background-color: #007bf5;
+      font-size: 15px;
+    }
     .cajaL {
+      // border: 1px solid black;
       color: #6195FF;
       font-weight: 600;
-      margin-top: 10px;
+      font-size: 14px;
+      margin-top: 5px;
+      cursor: pointer;
       a {
         text-decoration: none;
       }
+
+    }
+    .cajaL:hover {
+      color: #7ba7ff;
     }
   }
   .bottBox {
@@ -67,7 +112,7 @@
     }
   }
 }
-.cursoBox:hover {
-  background-color: rgb(237, 234, 234);
-  width: 230px;
-}
+// .cursoBox:hover {
+//   background-color: rgb(237, 234, 234);
+//   width: 230px;
+// }

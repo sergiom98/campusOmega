@@ -5,8 +5,8 @@
       <img src="{{valor?.imagen}}" alt="">
     </div>
     <div class="cajaT">{{valor?.titulo}}<div class="cajaD">{{valor?.descripcion}}</div></div>
-    <div class="cajaL" (click)="comprar()"></div>
-    <div class="cajaL" routerLink="./{{valor?.id}}" onclick="window.scrollTo(0, 0)">VER CURSO</div>
+    <div style="margin-bottom: 15px;"><div class="addCart" (click)="comprar()">AÑADIR<hr><img src="/assets/img/shopping-cart.png"></div>
+    <div class="cajaL" routerLink="./{{valor?.id}}" onclick="window.scrollTo(0, 0)">+ Información del curso</div></div>
   </div>
   <div class="bottBox">
     <div class="bottBoxI">
