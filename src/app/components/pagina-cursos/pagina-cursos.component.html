@@ -5,6 +5,43 @@
 <div [ngClass]="{modalno: !mostrarmodal, modalsi : mostrarmodal}" id="modal" >
 
   <div class="cajaFactura">
+    <div class="cajaFacturaI">
+      <div class="cajaFacturaIT">
+        <div class="logoFactura"><img src="/assets/img/logoBlack.png"></div>
+        <div class="tituloCajaFactura">CURSOS SELECCIONADOS</div>
+      </div>
+
+      <div class="cajaFacturaIM" *ngFor="let datosCesta of cesta; index as i">
+        <div class="cajaCursoFactura">
+            <div class="facturaI">
+              <img src="">
+              <div class="facturaI2">
+
+              </div>
+            </div>
+            <div class="facturaC"></div>
+            <div class="facturaD"></div>
+        </div>
+      </div>
+
+      <div class="cajaFacturaIB">
+        <div class="cajaPrecios">
+          <div class="cajaPreciosT">
+            <div class="subtotal">Subtotal: <span></span></div>
+            <div class="envio">Envio: <span></span></div>
+          </div>
+          <div class="cajaPreciosB">Precio Total: <span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cajaFacturaD">
+      <div class="cajaPago"></div>
+    </div>
+  </div>
+
+
+  <!-- <div class="cajaFactura">
     <div class="cerrar" (click)="mostrarmodal=false"><i class="fas fa-times-circle"></i></div>
     <div class="cuadrar">
     <div class="centrarFactura" *ngFor="let datosCesta of cesta; index as i">
@@ -22,11 +59,11 @@
     <div class="iva ordenar"><p> Iva 21%:</p><p>{{TotalIva | number : '2.2'}} €</p></div>
     <div class="total ordenar"><p>Factura Total:</p> <p> {{FacturaTotal | number : '2.2'}} €</p> </div>
   </div>
-  </div>
+  </div> -->
 </div>
 
 <div class="compra">
-  <a class="carro" (click)="abrirModal()"><i class="fas fa-shopping-cart"></i></a>
+  <a class="carro" (click)="abrirModal()"><img src="/assets/img/shopping-cart (6).png" alt="carro"></a>
   <span class="cesta" *ngIf="cesta.length>0">{{cesta.length}}</span>
 </div>
 
@@ -38,7 +75,8 @@
       <h1>CURSOS ONLINE Y PRESENCIALES</h1>
       <p>Los cursos más actualizados y más completos con la mayor fiabilidad y atención</p>
       <div class="buttons">
-        <button class="buttonL" onclick="window.location.href='#online';">CURSOS ONLINE <i class="fas fa-angle-down"></i></button><button onclick="window.location.href='#presencial';" class="buttonR">CURSOS PRESENCIALES <i class="fas fa-angle-down"></i></button>
+        <button class="buttonL" onclick="window.location.href='#online';">CURSOS ONLINE <i class="fas fa-angle-down"></i></button>
+        <button onclick="window.location.href='#presencial';" class="buttonR">CURSOS PRESENCIALES <i class="fas fa-angle-down"></i></button>
       </div>
     </div>
   </div>

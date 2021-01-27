@@ -1,42 +1,133 @@
 /* CARRO */
 .compra {
+  z-index: 999;
   position: fixed;
-  top: 110px;
-  right: 0px;
+  bottom: 55px;
+  right: 15px;
   // border: 1px solid black;
-  background-color: #6195FF;
   // border-radius: 100%;
   .carro {
-    i {
-      color: white;
-      font-size: 3.5em;
-      padding: 20px;
+    img {
+      width: 100px;
+      cursor: pointer;
     }
   }
   .cesta {
     position: absolute;
     top: 0;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border: 1px solid red;
-    border-radius: 2em;
-    padding: 5px 10px 5px 10px;
+    right: 0px;
+    background-color: white;
+    // color: white;
+    // border: 1px solid red;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
   }
 }
 //////////
+.modalno{
+  display: none;
+ }
+.modalsi{
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cajaFactura {
+    height: 90%;
+    width: 90%;
+    border: 1px solid #707070;
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /*z-index: 2;*/
+    .cajaFacturaI {
+      .cajaFacturaIT{
+        .logoFactura {
+          img {
+
+          }
+        }
+        .tituloCajaFactura {
+
+        }
+      }
+      .cajaFacturaIM {
+        .cajaCursoFactura {
+          .facturaI {
+            img {
+
+            }
+          .facturaI2 {
+
+          }
+          }
+          .facturaC {
+
+          }
+          .facturaD {
+
+          }
+        }
+      }
+      .cajaFacturaIB {
+        .cajaPrecios {
+          .cajaPreciosT {
+            .subtotal {
+              span {
+
+              }
+            }
+            .envio {
+              span {
+
+              }
+            }
+          }
+          .cajaPreciosB {
+            span {
+
+            }
+          }
+        }
+      }
+    }
+    .cajaFacturaD {
+      .cajaPago {
+
+      }
+    }
+  }
+  .imagenP img{
+    height: 75px;
+  }
+}
 
 /* MODAL */
+/*
 .cajaFactura{
-  height: 800px;
-  width: 50%;
+  height: 90%;
+  width: 80%;
   border: 1px solid #707070;
   background-color: white;
   position: relative;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  /*z-index: 2;*/
+  //z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +159,7 @@
   margin-left: 4em;
 }
 .centrarFactura{
+  border: 1px solid black;
   width: 95%;
   height: 100px;
   border-top: 1px solid #707070;
@@ -124,6 +216,7 @@
   font-weight: bold;
   color:  #DA00AC;
 }
+*/
 /***************************************/
 
 

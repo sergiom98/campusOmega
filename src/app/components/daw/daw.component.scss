@@ -291,10 +291,13 @@ form input::placeholder {
       margin-top: 2em;
       .tips {
         display: flex;
+        align-items: center;
+        padding-bottom: 10px;
         i {
           margin-right: 10px;
           color: #6195FF;
           float: left;
+
           // padding: 5px;
           // border-radius: 50%;
           // border: 1px solid #6195FF;
@@ -304,6 +307,7 @@ form input::placeholder {
           color: #868F9B;
           font-size: 16px;
           line-height: 1.6;
+          margin: 0;
         }
       }
     }
