@@ -28,7 +28,9 @@
     font-weight: bold;
   }
 }
-//////////
+
+
+////////// MODAL ///////////
 .modalno{
   display: none;
  }
@@ -47,7 +49,11 @@
   .cajaFactura {
     display: flex;
     padding: 1em;
+    min-height: 800px;
     height: 90%;
+    // height: fit-content;
+    // min-height: auto;
+    // min-width: 1150px;
     width: 90%;
     border: 1px solid #707070;
     background-color: white;
@@ -167,6 +173,9 @@
             font-size: 2em;
             padding: 0 10px;
             margin: auto 0;
+            i {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -328,107 +337,7 @@
   }
 }
 
-/* MODAL */
-/*
-.cajaFactura{
-  height: 90%;
-  width: 80%;
-  border: 1px solid #707070;
-  background-color: white;
-  position: relative;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  //z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.modalsi{
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-.modalno{
- display: none;
-}
-.imagenP img{
-  height: 75px;
-}
-.xam{
-  height: 65px;
-  margin-top: 0.5em;
-  margin-left: 4em;
-}
-.centrarFactura{
-  border: 1px solid black;
-  width: 95%;
-  height: 100px;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
-  margin-top: 2em;
-  margin-left: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.detalleFactura{
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.icono img{
-  height: 50px;
-}
-.cerrar{
-  position: fixed;
-  right: 337px;
-  top: 50px;
-  font-size: 28px;
-}
-.fas{
-  color: red;
-}
-.nombre, .precio{
-  font-size: 24px;
-}
-.mostrarPrecio{
-  font-size: 18px;
-}
-.cuadrar{
-  height: 70%;
-  width: 90%;
-  overflow: auto;
-}
-.cajonaso{
-  text-align: right;
-  width: 30%;
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-
-}
-.ordenar{
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-}
-.total{
-  font-weight: bold;
-  color:  #DA00AC;
-}
-*/
 /***************************************/
 
 
@@ -916,6 +825,52 @@ h2 {
   }
 
 }
+@media screen and (max-width: 900px) {
+  .cajaFacturaIM {
+    height: 400px !important;
+  }
+  .facturaI {
+    flex-direction: column;
+  }
+  .cajaCursoFactura {
+    flex-direction: column;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .modalsi {
+    padding: 20px 0;
+  }
+  .cajaFactura {
+    height: fit-content !important;
+    flex-direction: column;
+    margin: auto 0 !important;
+    .cajaFacturaI {
+      height: fit-content!important;
+      width: 100% !important;
+      .cajaFacturaIT {
+        // height: 150px !important;
+        width: 100% !important;
+      }
+      .cajaFacturaIM {
+        height: 400px !important;
+        width: 100% !important;
+      }
+      .cajaFacturaIT {
+        height: fit-content !important;
+        width: 100% !important;
+      }
+    }
+
+    .cajaFacturaD {
+      margin: 10px auto 0 auto !important;
+      width: 100% !important;
+      height: fit-content !important;
+      border: none !important;
+    }
+  }
+}
+
 @media screen and (max-width: 622px) {
   * {
     padding: 0px;
